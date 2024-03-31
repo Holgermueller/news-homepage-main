@@ -24,14 +24,32 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
+    <nav class="mobile-nav">
+      <div class="nav-container">
+        <a href="#" aria-label="close" onclick="closeNav()" id="closeNav">
+          <img
+            src="assets/images/icon-menu-close.svg"
+            class="close-nav"
+            alt="Close nav icon"
+        /></a>
+
+        <ul>
+          <li><a href="#" aria-label="Home">Home</a></li>
+          <li><a href="#" aria-label="New">New</a></li>
+          <li><a href="#" aria-label="Popular">Popular</a></li>
+          <li><a href="#" aria-label="Trending">Trending</a></li>
+          <li><a href="#" aria-label="Categories"> Categories </a></li>
+        </ul>
+      </div>
+    </nav>
     <header class="desktop-header">
       <img src="assets/images/logo.svg" alt="Company logo" />
-
-      <img
-        src="assets/images/icon-menu.svg"
-        class="open-nav"
-        alt="Open nav icon"
-      />
+      <a href="#" id="openNav"
+        ><img
+          src="assets/images/icon-menu.svg"
+          class="open-nav"
+          alt="Open nav icon"
+      /></a>
 
       <nav class="desktop-nav">
         <ul>
@@ -43,21 +61,6 @@
         </ul>
       </nav>
     </header>
-
-    <nav class="mobile-nav">
-      <img
-        src="assets/images/icon-menu-close.svg"
-        class="close-nav"
-        alt="Close nav icon"
-      />
-      <ul>
-        <li><a href="#" aria-label="Home">Home</a></li>
-        <li><a href="#" aria-label="New">New</a></li>
-        <li><a href="#" aria-label="Popular">Popular</a></li>
-        <li><a href="#" aria-label="Trending">Trending</a></li>
-        <li><a href="#" aria-label="Categories"> Categories </a></li>
-      </ul>
-    </nav>
 
     <main>
       <section class="main-section">
@@ -101,20 +104,39 @@
         </p>
       </section>
 
-      <section>
-        01
+      <section class="bottom-section">
+        <div class="article-container">
+          <img src="assets/images/image-retro-pcs.jpg" alt="Retro pcs" />
+          <div class="text-container">
+            <b>01</b>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
 
-        <h2>Reviving Retro PCs</h2>
+        <div class="article-container">
+          <img
+            src="assets/images/image-top-laptops.jpg"
+            alt="Laptop computer"
+          />
+          <div class="text-container">
+            <b>02</b>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
 
-        <p>What happens when old PCs are given modern upgrades?</p>
-
-        02
-        <h2>Top 10 Laptops of 2022</h2>
-        <p>Our best picks for various needs and budgets.</p>
-
-        03
-        <h2>The Growth of Gaming</h2>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+        <div class="article-container">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt="Video game controller"
+          />
+          <div class="text-container">
+            <b>03</b>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -122,7 +144,10 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://holgermueller.github.io/portfolio/">Holger Mueller</a>.
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
