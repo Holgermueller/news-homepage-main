@@ -24,8 +24,8 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <nav class="mobile-nav">
-      <div class="nav-container">
+    <nav class="mobile-nav" id="mobileNav">
+      <div class="mobile-links-container">
         <a href="#" aria-label="close" onclick="closeNav()" id="closeNav">
           <img
             src="assets/images/icon-menu-close.svg"
@@ -44,7 +44,8 @@
     </nav>
     <header class="desktop-header">
       <img src="assets/images/logo.svg" alt="Company logo" />
-      <a href="#" id="openNav"
+
+      <a href="#" id="openNav" onclick="openNav()"
         ><img
           src="assets/images/icon-menu.svg"
           class="open-nav"

@@ -25,13 +25,17 @@ header {
   height: 100vh;
   position: fixed;
   background-color: hsla(0, 0%, 0%, 50%);
+  transition: 0.7s;
+  margin-left: 100%;
 }
 
-.nav-container {
+.mobile-links-container {
   height: 100%;
   margin-left: 15%;
   background-color: hsl(36, 100%, 99%);
   padding: 5%;
+  transition: 0.4s;
+  display: flex;
 }
 
 nav ul {
@@ -42,7 +46,7 @@ nav ul {
 }
 
 a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(240, 100%, 5%);
   font-size: 1.25rem;
   text-decoration: none;
 }
@@ -152,7 +156,8 @@ section {
   margin: 0;
 }
 
-.attribution {
+.attribution,
+.attribution a {
   font-size: 11px;
   text-align: center;
 }

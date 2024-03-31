@@ -1,9 +1,10 @@
 "use strict";
 
-function openNav() {}
+function openNav() {
+  console.log("click");
+  document.getElementById("mobileNav").style.marginLeft = "0";
+}
 
 function closeNav() {
-  document.getElementById("closeNav");
-  console.log("click");
-  document.getElementById("mobileNav").style.width = "none";
+  document.getElementById("mobileNav").style.marginLeft = "100%";
 }
