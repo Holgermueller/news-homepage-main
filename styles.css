@@ -4,6 +4,7 @@ html {
   margin: 0;
   font-family: "Inter", sans-serif;
   width: 100vw;
+  box-sizing: border-box;
 }
 
 header {
@@ -54,6 +55,11 @@ a {
 .open-nav {
   margin: auto 0;
   height: 50%;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 main {
@@ -163,4 +169,43 @@ section {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  .open-nav,
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .main {
+    grid-template-columns: repeat(3 1fr);
+  }
+
+  .main-section {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .new-section {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+  .bottom-section {
+    flex-direction: row;
+    grid-row: 2;
+    grid-column: -2/1;
+  }
 }
