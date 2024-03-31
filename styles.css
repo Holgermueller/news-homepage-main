@@ -1,0 +1,30 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: grid;
+}
+
+.new-section {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.new-section h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
