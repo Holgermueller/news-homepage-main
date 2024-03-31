@@ -24,13 +24,55 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <header>
-      <img src="assets/images/logo.svg" alt="" />
-      <nav>Home New Popular Trending Categories</nav>
+    <header class="desktop-header">
+      <img src="assets/images/logo.svg" alt="Company logo" />
+
+      <img
+        src="assets/images/icon-menu.svg"
+        class="open-nav"
+        alt="Open nav icon"
+      />
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#" aria-label="Home">Home</a></li>
+          <li><a href="#" aria-label="New">New</a></li>
+          <li><a href="#" aria-label="Popular">Popular</a></li>
+          <li><a href="#" aria-label="Trending">Trending</a></li>
+          <li><a href="#" aria-label="Categories"> Categories </a></li>
+        </ul>
+      </nav>
     </header>
 
+    <nav class="mobile-nav">
+      <img
+        src="assets/images/icon-menu-close.svg"
+        class="close-nav"
+        alt="Close nav icon"
+      />
+      <ul>
+        <li><a href="#" aria-label="Home">Home</a></li>
+        <li><a href="#" aria-label="New">New</a></li>
+        <li><a href="#" aria-label="Popular">Popular</a></li>
+        <li><a href="#" aria-label="Trending">Trending</a></li>
+        <li><a href="#" aria-label="Categories"> Categories </a></li>
+      </ul>
+    </nav>
+
     <main>
-      <section>
+      <section class="main-section">
+        <img
+          class="mobile-image"
+          src="assets/images/image-web-3-mobile.jpg"
+          alt=""
+        />
+
+        <img
+          class="desktop-image"
+          src="assets/images/image-web-3-desktop.jpg"
+          alt=""
+        />
+
         <h1>The Bright Future of Web 3.0?</h1>
 
         <p>
@@ -45,14 +87,14 @@
       <section class="new-section">
         <h2>New</h2>
 
-        <h2>Hydrogen VS Electric Cars</h2>
+        <h3>Hydrogen VS Electric Cars</h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <h2>The Downsides of AI Artistry</h2>
+        <h3>The Downsides of AI Artistry</h3>
         <p>
           What are the possible adverse effects of on-demand AI image
           generation?
         </p>
-        <h2>Is VC Funding Drying Up?</h2>
+        <h3>Is VC Funding Drying Up?</h3>
         <p>
           Private funding by VC firms is down 50% YOY. We take a look at what
           that means.
