@@ -26,15 +26,17 @@
   <body>
     <nav class="mobile-nav" id="mobileNav">
       <div class="mobile-links-container">
-        <a href="#" aria-label="close" onclick="closeNav()" id="closeNav">
+        <a
+          href="#"
+          aria-label="close mobile navigation"
+          onclick="closeNav()"
+          id="closeNav"
+        >
           <img
             src="assets/images/icon-menu-close.svg"
             class="close-nav"
             alt="Close nav icon"
           />
-          <span class="visually-hidden-text"
-            >Click here to close navigation</span
-          >
         </a>
 
         <ul>
@@ -49,13 +51,16 @@
     <header class="desktop-header">
       <img src="assets/images/logo.svg" alt="Company logo" />
 
-      <a href="#" id="openNav" onclick="openNav()"
+      <a
+        href="#"
+        aria-label="open mobile navigation"
+        id="openNav"
+        onclick="openNav()"
         ><img
           src="assets/images/icon-menu.svg"
           class="open-nav"
           alt="Open nav icon"
         />
-        <span class="visually-hidden-text">Click here to open navigation</span>
       </a>
 
       <nav class="desktop-nav" id="desktopNav">
@@ -91,7 +96,7 @@
           really fulfilling its promise?
         </p>
 
-        <button>Read more</button>
+        <a href="#">Read More</a>
       </section>
 
       <section class="new-section">

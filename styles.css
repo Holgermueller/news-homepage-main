@@ -40,10 +40,6 @@ header {
   display: flex;
 }
 
-.visually-hidden-text {
-  display: none;
-}
-
 nav ul {
   margin-top: 25%;
   list-style-type: none;
@@ -70,7 +66,7 @@ main {
 
 p {
   font-size: 15px;
-  color: hsl(240, 7%, 79%);
+  color: hsl(236, 13%, 42%);
   line-height: 2rem;
   font-weight: 500;
 }
@@ -92,7 +88,7 @@ section {
   font-size: 3rem;
 }
 
-.main-section button {
+.main-section a {
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
   border: none;
@@ -174,7 +170,6 @@ section {
 .attribution a {
   font-size: 11px;
   text-align: center;
-  padding: 8px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -203,11 +198,10 @@ section {
   }
 
   .desktop-nav ul a {
-    color: hsl(240, 7%, 79%);
+    color: hsl(236, 13%, 42%);
   }
 
   a,
-  button,
   .new-section h3,
   .bottom-section h2 {
     cursor: pointer;
@@ -219,7 +213,7 @@ section {
     color: hsl(35, 77%, 62%);
   }
 
-  button:hover {
+  main a:hover {
     background-color: black;
     color: hsl(240, 7%, 79%);
   }
@@ -257,7 +251,7 @@ section {
 
   .main-section h1,
   .main-section p,
-  .main-section button {
+  .main-section a {
     margin: 0;
   }
 
@@ -268,13 +262,14 @@ section {
   }
 
   .main-section p,
-  .main-section button {
+  .main-section a {
     grid-column: 2;
     height: max-content;
   }
 
-  .main-section button {
-    width: 60%;
+  .main-section a {
+    text-align: center;
+    width: max-content;
   }
 
   .new-section {
