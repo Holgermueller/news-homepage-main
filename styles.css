@@ -40,6 +40,10 @@ header {
   display: flex;
 }
 
+.visually-hidden-text {
+  display: none;
+}
+
 nav ul {
   margin-top: 25%;
   list-style-type: none;
